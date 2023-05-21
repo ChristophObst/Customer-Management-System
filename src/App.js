@@ -4,6 +4,8 @@ import { uid } from "uid";
 import { useState } from "react";
 import mongoose from "mongoose";
 
+//----
+
 const InputContainer = styled.div`
   display: flex;
   justify-content: space-around;
