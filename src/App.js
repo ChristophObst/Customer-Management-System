@@ -2,9 +2,7 @@ import styled from "styled-components";
 import useLocalStorageState from "use-local-storage-state";
 import { uid } from "uid";
 import { useState } from "react";
-import mongoose from "mongoose";
-
-//----
+/* import mongoose from "mongoose"; */
 
 const InputContainer = styled.div`
   display: flex;
