@@ -2,11 +2,6 @@ import styled from "styled-components";
 import useLocalStorageState from "use-local-storage-state";
 import { uid } from "uid";
 import { useState } from "react";
-/* import mongoose from "mongoose"; */
-
-//------
-
-//
 
 const InputContainer = styled.div`
   display: flex;
@@ -162,7 +157,7 @@ export default function App() {
             <h3>Actions</h3>
           </HeadlineContainer>
           {todos.map((todo) => (
-            <li key={todo.id}>
+            <div key={todo.id}>
               <DbContainer>
                 <FirstNameContainer>{todo.name}</FirstNameContainer>
                 <LastNameContainer> {todo.lastName} </LastNameContainer>
@@ -192,7 +187,7 @@ export default function App() {
                   Delete
                 </DeleteButton>
               </DbContainer>
-            </li>
+            </div>
           ))}
         </p>
       </>
@@ -223,7 +218,7 @@ export default function App() {
           </HeadlineContainer>
 
           {todos.map((todo) => (
-            <li key={todo.id}>
+            <div key={todo.id}>
               <DbContainer>
                 <FirstNameContainer>{todo.name}</FirstNameContainer>
                 <LastNameContainer> {todo.lastName} </LastNameContainer>
@@ -251,7 +246,7 @@ export default function App() {
                   Delete
                 </DeleteButton>
               </DbContainer>
-            </li>
+            </div>
           ))}
         </p>
       </>
